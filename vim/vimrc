@@ -136,7 +136,13 @@ augroup END
 " markdown {{{
 augroup filetype_markdown
     autocmd!
-    autocmd FileType markdown set cc=81 tw=79
+    autocmd FileType markdown set colorcolumn=81 textwidth=79
+augroup END
+" }}}
+" asciidoc {{{
+augroup filetype_markdown
+    autocmd!
+    autocmd FileType asciidoc set colorcolumn=81 textwidth=79
 augroup END
 " }}}
 " }}}
