@@ -1,0 +1,10 @@
+[user]
+	name = delsquared
+	email = danylo.dubinin@gmail.com
+[core]
+	editor = nvim
+	excludesfile = /home/i/.gitignore
+[diff]
+	tool = nvim -d
+[difftool]
+	prompt = false

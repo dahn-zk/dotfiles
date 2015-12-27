@@ -142,4 +142,9 @@ augroup filetype_markdown
     autocmd FileType asciidoc set colorcolumn=81 textwidth=79
 augroup END
 " }}}
+" {{{ gitcommit
+augroup filetype_gitcommit
+    autocmd!
+    autocmd Filetype gitcommit setlocal spell textwidth=72
+augroup END
 " }}}
