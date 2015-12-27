@@ -6,16 +6,11 @@ augroup filetype_vim
 augroup END
 " }}}
 
-" {{{
-"filetype off
-call pathogen#infect()
-"filetype plugin indent on
-syntax on
-" }}}
-
 " Basic settings {{{
 set nocompatible
 set modelines=0
+
+syntax on
 
 " tab settings
 set tabstop=4
