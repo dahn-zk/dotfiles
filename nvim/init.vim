@@ -145,6 +145,7 @@ augroup END
 " {{{ gitcommit
 augroup filetype_gitcommit
     autocmd!
-    autocmd Filetype gitcommit setlocal spell textwidth=72
+    autocmd Filetype gitcommit setlocal textwidth=72
 augroup END
+" }}}
 " }}}
