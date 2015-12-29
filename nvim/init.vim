@@ -7,7 +7,6 @@ augroup END
 " }}}
 
 " Basic settings {{{
-set nocompatible
 set modelines=0
 
 syntax on
@@ -34,7 +33,6 @@ set wildmenu
 set wildmode=list:longest
 set visualbell
 set cursorline
-set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
