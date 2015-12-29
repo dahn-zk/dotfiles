@@ -38,8 +38,16 @@ set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
 
+" undo/rescue files
 set undofile
 set dir=~/tmp
+" }}}
+
+" {{{ basic mappings
+
+" clear trailing spaces from end of each line
+nnoremap <leader>notrail :%s/\s\+$<cr>
+
 " }}}
 
 " status line {{{
