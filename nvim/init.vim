@@ -48,6 +48,10 @@ set dir=~/tmp
 " clear trailing spaces from end of each line
 nnoremap <leader>notrail :%s/\s\+$<cr>
 
+" insert newlines ('vertical' indent)
+nnoremap >< o<esc>k
+nnoremap <> O<esc>j
+
 " }}}
 
 " status line {{{
