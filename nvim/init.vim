@@ -209,3 +209,9 @@ augroup END
 " }}}
 
 " }}}
+
+" window splits {{{
+
+set winminheight=0
+
+" }}}
