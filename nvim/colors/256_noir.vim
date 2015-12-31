@@ -16,7 +16,7 @@ hi Comment         ctermbg=16     ctermfg=240
 hi Condtional      ctermbg=16     ctermfg=196
 hi Constant        ctermbg=16     ctermfg=252
 hi Cursor          ctermbg=255    ctermfg=16
-hi ColorColumn     ctermbg=240    ctermfg=16
+hi ColorColumn     ctermbg=232    ctermfg=196
 hi CursorColumn    ctermbg=245    ctermfg=16
 hi Debug           ctermbg=16     ctermfg=250
 hi Define          ctermbg=16     ctermfg=255
