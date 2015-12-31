@@ -3,6 +3,7 @@
 set modelines=0
 
 syntax on
+colorscheme 256_noir
 
 " tab settings
 set tabstop=4
@@ -28,7 +29,10 @@ set cursorline
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+
+" line numbers
 set relativenumber
+set number
 
 " undo/rescue files
 set undofile
