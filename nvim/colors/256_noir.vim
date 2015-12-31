@@ -33,6 +33,7 @@ hi Include         ctermbg=16     ctermfg=255
 hi Keyword         ctermbg=16     ctermfg=255
 hi Label           ctermbg=16     ctermfg=255
 hi LineNr          ctermbg=16     ctermfg=240
+hi CursorLineNr    ctermbg=16     ctermfg=240
 hi MatchParen      ctermbg=245    ctermfg=16
 hi Macro           ctermbg=16     ctermfg=250
 hi ModeMsg         ctermbg=16     ctermfg=250
