@@ -160,6 +160,16 @@ inoremap jk <esc>
 
 " filetype-specific settings {{{
 
+" limit line length {{{
+
+augroup line_length
+    autocmd!
+    autocmd FileType markdown,asciidoc,c,python
+        \ set textwidth=80 colorcolumn=+1
+augroup END
+
+" }}}
+
 " html {{{
 
 augroup filetype_html
