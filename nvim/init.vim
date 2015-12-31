@@ -1,4 +1,4 @@
-" Basic settings {{{
+" basic settings {{{
 
 set modelines=0
 
