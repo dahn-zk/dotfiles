@@ -11,7 +11,7 @@ set softtabstop=4
 set expandtab
 
 " show non-printable characters
-set listchars=eol:$,space:·,extends:>,precedes:<
+set listchars=eol:¶,space:·,extends:>,precedes:<
 set list
 
 set mouse=a
