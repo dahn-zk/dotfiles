@@ -202,8 +202,17 @@ augroup END
 
 augroup filetype_vim
     autocmd!
+
+    " folding {{{
     autocmd FileType vim setlocal foldmethod=marker
     set foldlevelstart=0
+    " }}}
+
+    autocmd FileType vim set nolist
+
+    " see basic mappings
+    autocmd Filetype vim autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 augroup END
 
 " }}}
