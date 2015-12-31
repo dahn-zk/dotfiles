@@ -16,7 +16,7 @@ hi Comment         ctermbg=16     ctermfg=240
 hi Condtional      ctermbg=16     ctermfg=196
 hi Constant        ctermbg=16     ctermfg=252
 hi Cursor          ctermbg=255    ctermfg=16
-hi ColorColumn     ctermbg=250    ctermfg=16
+hi ColorColumn     ctermbg=240    ctermfg=16
 hi CursorColumn    ctermbg=245    ctermfg=16
 hi Debug           ctermbg=16     ctermfg=250
 hi Define          ctermbg=16     ctermfg=255
@@ -54,8 +54,8 @@ hi SpecialComment  ctermbg=16     ctermfg=245
 hi Special         ctermbg=16     ctermfg=255
 hi SpecialKey      ctermbg=16     ctermfg=16
 hi Statement       ctermbg=16     ctermfg=255
-hi StatusLine      ctermbg=255    ctermfg=196
-hi StatusLineNC    ctermbg=16     ctermfg=250
+hi StatusLine      ctermbg=250    ctermfg=235
+hi StatusLineNC    ctermbg=16     ctermfg=240
 hi StorageClass    ctermbg=16     ctermfg=255
 hi String          ctermbg=16     ctermfg=245
 hi Structure       ctermbg=16     ctermfg=255
@@ -64,7 +64,7 @@ hi Title           ctermbg=16     ctermfg=250
 hi Todo            ctermbg=16     ctermfg=255
 hi Typedef         ctermbg=16     ctermfg=255
 hi Type            ctermbg=16     ctermfg=255
-hi VertSplit       ctermbg=16     ctermfg=250
+hi VertSplit       ctermbg=240    ctermfg=240
 hi WarningMsg      ctermbg=16     ctermfg=196
 hi WildMenu        ctermbg=255    ctermfg=240
 hi Visual          ctermbg=250    ctermfg=16
