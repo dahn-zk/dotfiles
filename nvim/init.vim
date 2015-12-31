@@ -215,3 +215,9 @@ augroup END
 set winminheight=0
 
 " }}}
+
+" unsorted {{{
+
+nnoremap <leader>g :silent execute "grep -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
+
+" }}}
