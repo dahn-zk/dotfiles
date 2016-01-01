@@ -233,15 +233,18 @@ augroup END
 
 " }}}
 
-" multiples windows {{{
+" multiple windows {{{
 " windows... windows are everywhere...
 
 set winminheight=0
 
-" switching beetween tabs
+" switching between tabs
 nnoremap <tab> :tabnext<cr>
 nnoremap <S-tab> :tabprevious<cr>
 
+" switching between windows
+nnoremap <A-tab> <C-w>w
+nnoremap <A-S-tab> <C-w>W
 
 " }}}
 
