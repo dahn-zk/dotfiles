@@ -233,9 +233,15 @@ augroup END
 
 " }}}
 
-" window splits {{{
+" multiples windows {{{
+" windows... windows are everywhere...
 
 set winminheight=0
+
+" switching beetween tabs
+nnoremap <tab> :tabnext<cr>
+nnoremap <S-tab> :tabprevious<cr>
+
 
 " }}}
 
