@@ -43,7 +43,7 @@ set dir=~/tmp
 " basic mappings {{{
 
 " clear trailing spaces from end of each line
-nnoremap <leader>notrail :%s/\s\+$<cr>
+nnoremap <leader>notrail :%s/\s\+$//e<cr>
 
 " insert newlines ('vertical' indent)
 nnoremap >< O<esc>j
