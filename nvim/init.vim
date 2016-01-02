@@ -250,6 +250,6 @@ nnoremap <A-tab> <C-w>w
 
 " unsorted {{{
 
-nnoremap <leader>g :silent execute "grep -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
+"nnoremap <leader>g :silent execute "grep -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
 
 " }}}
