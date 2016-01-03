@@ -53,7 +53,7 @@ hi Search          ctermbg=16     ctermfg=160
 hi SpecialChar     ctermbg=16     ctermfg=255
 hi SpecialComment  ctermbg=16     ctermfg=245
 hi Special         ctermbg=16     ctermfg=255
-hi SpecialKey      ctermbg=16     ctermfg=16
+hi SpecialKey      ctermbg=16     ctermfg=235
 hi Statement       ctermbg=16     ctermfg=255
 hi StatusLine      ctermbg=250    ctermfg=235
 hi StatusLineNC    ctermbg=16     ctermfg=240
