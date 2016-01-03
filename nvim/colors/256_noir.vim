@@ -34,7 +34,7 @@ hi Keyword         ctermbg=16     ctermfg=255
 hi Label           ctermbg=16     ctermfg=255
 hi LineNr          ctermbg=16     ctermfg=240
 hi CursorLineNr    ctermbg=16     ctermfg=240
-hi MatchParen      ctermbg=245    ctermfg=16
+hi MatchParen      ctermbg=232    ctermfg=255       cterm=bold
 hi Macro           ctermbg=16     ctermfg=250
 hi ModeMsg         ctermbg=16     ctermfg=250
 hi MoreMsg         ctermbg=16     ctermfg=250
