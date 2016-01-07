@@ -222,7 +222,7 @@ augroup filetype_vim
 
     " folding {{{
     autocmd FileType vim setlocal foldmethod=marker
-    setlocal foldlevelstart=0
+    autocmd FileType vim setlocal foldlevelstart=0
     " }}}
 
     autocmd FileType vim setlocal nolist
