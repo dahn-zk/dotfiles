@@ -172,7 +172,7 @@ inoremap jk <esc>
 augroup line_length
     autocmd!
     autocmd FileType markdown,asciidoc,c,python
-        \ set textwidth=80 colorcolumn=+1
+        \ setlocal textwidth=80 colorcolumn=+1
 augroup END
 
 " }}}
@@ -192,7 +192,7 @@ augroup END
 
 augroup filetype_markdown
     autocmd!
-    autocmd FileType markdown set colorcolumn=81 textwidth=79
+    autocmd FileType markdown setlocal colorcolumn=81 textwidth=79
 augroup END
 
 " }}}
@@ -201,7 +201,7 @@ augroup END
 
 augroup filetype_markdown
     autocmd!
-    autocmd FileType asciidoc set colorcolumn=81 textwidth=79
+    autocmd FileType asciidoc setlocal colorcolumn=81 textwidth=79
 augroup END
 
 " }}}
@@ -222,10 +222,10 @@ augroup filetype_vim
 
     " folding {{{
     autocmd FileType vim setlocal foldmethod=marker
-    set foldlevelstart=0
+    setlocal foldlevelstart=0
     " }}}
 
-    autocmd FileType vim set nolist
+    autocmd FileType vim setlocal nolist
 
     " see basic mappings
     autocmd Filetype vim autocmd BufWritePre <buffer> :%s/\s\+$//e
