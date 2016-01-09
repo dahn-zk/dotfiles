@@ -1,3 +1,15 @@
+" plugins {{{
+" vim-plug. https://github.com/junegunn/vim-plug
+
+call plug#begin('plugged/')
+
+" CamelCase motion through words. https://github.com/bkad/CamelCaseMotion
+Plug 'bkad/CamelCaseMotion'
+
+call plug#end()
+
+" }}}
+
 " basic settings {{{
 
 set modelines=0
@@ -51,6 +63,8 @@ nnoremap <leader>notrail :%s/\s\+$//e<cr>
 " insert newlines ('vertical' indent)
 nnoremap >< O<esc>j
 nnoremap <> o<esc>k
+
+call camelcasemotion#CreateMotionMappings('<leader>')
 
 " }}}
 
