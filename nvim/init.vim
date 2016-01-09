@@ -66,6 +66,24 @@ nnoremap <> o<esc>k
 
 call camelcasemotion#CreateMotionMappings('<leader>')
 
+" scrolling {{{
+" help pages: scroll-up, scroll-down, scroll-horizontal
+
+" single step
+nnoremap <c-j> <c-e>
+nnoremap <c-k> <c-y>
+nnoremap <c-h> zh
+nnoremap <c-l> zl
+
+" half screenwidth
+" FIXME unfortunately, ctrl-shift works like simgle ctrl, so use alt
+nnoremap <c-a-j> <c-u>
+nnoremap <c-a-k> <c-d>
+nnoremap <c-a-h> zH
+nnoremap <c-a-l> zL
+
+" }}}
+
 " }}}
 
 " status line {{{
