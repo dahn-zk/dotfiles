@@ -1,7 +1,7 @@
 " plugins {{{
 " vim-plug. https://github.com/junegunn/vim-plug
 
-call plug#begin('plugged/')
+call plug#begin('~/.config/nvim/plugged/')
 
 " CamelCase motion through words. https://github.com/bkad/CamelCaseMotion
 Plug 'bkad/CamelCaseMotion'
