@@ -7,13 +7,10 @@ call plug#begin('~/.config/nvim/plugged/')
 " CamelCase motion through words. https://github.com/bkad/CamelCaseMotion
 Plug 'bkad/CamelCaseMotion'
 
-" code snippets
-Plug 'SirVer/ultisnips'
-
 call plug#end()
 " }}}
 
-let g:UltiSnipsExpandTrigger="<enter>"
+call camelcasemotion#CreateMotionMappings('<leader>')
 
 " }}}
 
@@ -70,8 +67,6 @@ nnoremap <leader>notrail :%s/\s\+$//e<cr>
 " insert newlines ('vertical' indent)
 nnoremap >< O<esc>j
 nnoremap <> o<esc>k
-
-call camelcasemotion#CreateMotionMappings('<leader>')
 
 " scrolling {{{
 " help pages: scroll-up, scroll-down, scroll-horizontal
