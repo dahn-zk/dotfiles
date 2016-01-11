@@ -4,8 +4,13 @@
 " plugging {{{
 call plug#begin('~/.config/nvim/plugged/')
 
-" CamelCase motion through words. https://github.com/bkad/CamelCaseMotion
+" CamelCase motion through words
+" https://github.com/bkad/CamelCaseMotion
 Plug 'bkad/CamelCaseMotion'
+
+" change the order of 2 delimited pieces of text
+" https://github.com/mmahnic/vim-flipwords
+Plug 'mmahnic/vim-flipwords'
 
 call plug#end()
 " }}}
