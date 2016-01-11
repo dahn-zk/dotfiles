@@ -166,10 +166,25 @@ set wrap
 
 " }}}
 
-" swap lines {{{
+" move {{{
+"
+" move around things {{{
 
-nnoremap - ddp
-nnoremap _ ddkkp
+" words
+nnoremap H b
+nnoremap L e
+
+" }}}
+
+" move things around {{{
+
+" lines
+nnoremap <A-j> :m .+1<CR>
+nnoremap <A-k> :m .-2<CR>
+vnoremap <A-j> :m '>+1<CR>gv
+vnoremap <A-k> :m '<-2<CR>gv
+
+" }}}
 
 " }}}
 
@@ -179,13 +194,6 @@ iabbrev @Sig@ Dahn Oak <danylo.dubinin@gmail.com>
 iabbrev @sig@ Dahn Oak <danylo.dubinin@gmail.com>
 iabbrev @Sigf@ Danylo Dubinin <danylo.dubinin@gmail.com>
 iabbrev @Sigu@ Данило Дубінін <danylo.dubinin@gmail.com>
-
-" }}}
-
-" move around words {{{
-
-nnoremap H b
-nnoremap L e
 
 " }}}
 
