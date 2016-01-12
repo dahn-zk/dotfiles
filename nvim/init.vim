@@ -12,6 +12,9 @@ Plug 'bkad/CamelCaseMotion'
 " https://github.com/mmahnic/vim-flipwords
 Plug 'mmahnic/vim-flipwords'
 
+" syntax for AsciiDoc
+Plug 'asciidoc/vim-asciidoc'
+
 call plug#end()
 " }}}
 
@@ -252,6 +255,7 @@ augroup END
 augroup filetype_markdown
     autocmd!
     autocmd FileType asciidoc setlocal colorcolumn=81 textwidth=79
+    autocmd FileType asciidoc setlocal syntax=asciidoc
 augroup END
 
 " }}}
