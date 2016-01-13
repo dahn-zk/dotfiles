@@ -60,6 +60,9 @@ hi StatusLineNC    ctermbg=16     ctermfg=240
 hi StorageClass    ctermbg=16     ctermfg=255
 hi String          ctermbg=16     ctermfg=245
 hi Structure       ctermbg=16     ctermfg=255
+hi TabLineFill     ctermbg=16     ctermfg=240
+hi TabLine         ctermbg=240    ctermfg=16
+hi TabLineSel      ctermbg=235    ctermfg=250
 hi Tag             ctermbg=16     ctermfg=196
 hi Title           ctermbg=16     ctermfg=250
 hi Todo            ctermbg=16     ctermfg=255
