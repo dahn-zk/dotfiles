@@ -15,6 +15,9 @@ Plug 'mmahnic/vim-flipwords'
 " syntax for AsciiDoc
 Plug 'asciidoc/vim-asciidoc'
 
+" remove 'special case' of cw/cW
+Plug 'svermeulen/vim-you-keep-using-that-word'
+
 call plug#end()
 " }}}
 
