@@ -65,7 +65,7 @@ hi TabLine         ctermbg=240    ctermfg=16
 hi TabLineSel      ctermbg=235    ctermfg=250
 hi Tag             ctermbg=16     ctermfg=196
 hi Title           ctermbg=16     ctermfg=250
-hi Todo            ctermbg=16     ctermfg=255
+hi Todo            ctermbg=16     ctermfg=255       cterm=bold
 hi Typedef         ctermbg=16     ctermfg=255
 hi Type            ctermbg=16     ctermfg=255
 hi VertSplit       ctermbg=240    ctermfg=240
