@@ -305,6 +305,12 @@ nnoremap <A-tab> <C-w>w
 
 " }}}
 
+" sessions {{{
+
+set sessionoptions+=options
+
+" }}}
+
 " unsorted {{{
 
 "nnoremap <leader>g :silent execute "grep -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
