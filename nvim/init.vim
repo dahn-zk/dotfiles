@@ -138,7 +138,7 @@ inoremap <right> <nop>
 
 " }}}
 
-" searching/moving {{{
+" searching {{{
 
 " searching by regular expressions {{{
 
@@ -162,9 +162,15 @@ set hlsearch
 
 " }}}
 
+" clear search {{{
+
+" highlighting
 nnoremap <leader><space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
+
+" register
+nnoremap <leader><space><space> :let @/=''<cr>
+
+" }}}
 
 " }}}
 
