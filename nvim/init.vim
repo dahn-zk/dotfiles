@@ -70,6 +70,7 @@ set dir=~/tmp
 " basic mappings {{{
 
 " save file using sudo
+" TODO: check if command already exist
 command W w !sudo tee > /dev/null %
 
 " clear trailing spaces from end of each line
