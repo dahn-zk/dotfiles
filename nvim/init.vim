@@ -70,8 +70,7 @@ set dir=~/tmp
 " basic mappings {{{
 
 " save file using sudo
-" TODO: check if command already exist
-command W w !sudo tee > /dev/null %
+command! W w !sudo tee > /dev/null %
 
 " clear trailing spaces from end of each line
 nnoremap <leader>notrail :%s/\s\+$//e<cr>
@@ -290,6 +289,17 @@ augroup filetype_vim
 
     " see basic mappings
     autocmd Filetype vim autocmd BufWritePre <buffer> :%s/\s\+$//e
+
+augroup END
+
+" }}}
+
+" python {{{
+
+augroup filetype_python
+    autocmd!
+
+    noremap <leader>printfix g/print/normal! el(A)
 
 augroup END
 
