@@ -318,7 +318,7 @@ nnoremap <S-tab> :tabprevious<cr>
 
 " switching between windows
 nnoremap <A-tab> <C-w>w
-" <S-A-tab> doesnt work :< it uses previous <S-tab> mappinf instead!
+" <S-A-tab> doesnt work :< it uses previous <S-tab> mapping instead!
 
 " }}}
 
