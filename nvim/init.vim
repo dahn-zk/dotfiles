@@ -69,8 +69,14 @@ set dir=~/tmp
 
 " basic mappings {{{
 
+" save file
+nnoremap <f2> :write<cr>
+
+" save & close
+nnoremap <f4> :write<cr>:quit<cr>
+
 " save file using sudo
-command! W w !sudo tee > /dev/null %
+command! W write !sudo tee > /dev/null %
 
 " clear trailing spaces from end of each line
 nnoremap <leader>notrail :%s/\s\+$//e<cr>
