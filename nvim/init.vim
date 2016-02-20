@@ -70,10 +70,10 @@ set dir=~/tmp
 " basic mappings {{{
 
 " save file
-nnoremap <f2> :write<cr>
+nnoremap <f2> <esc>:write<cr>
 
 " save & close
-nnoremap <f4> :write<cr>:quit<cr>
+nnoremap <f4> <esc>:write<cr>:quit<cr>
 
 " save file using sudo
 command! W write !sudo tee > /dev/null %
