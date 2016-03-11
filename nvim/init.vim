@@ -15,6 +15,9 @@ Plug 'mmahnic/vim-flipwords'
 " syntax for AsciiDoc
 Plug 'asciidoc/vim-asciidoc'
 
+" awesome increment/decrement of values (bool, int, numeric, hex)
+Plug 'vim-scripts/nextval'
+
 call plug#end()
 " }}}
 
