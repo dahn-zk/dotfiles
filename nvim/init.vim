@@ -239,7 +239,7 @@ inoremap jk <esc>
 
 augroup line_length
     autocmd!
-    autocmd FileType markdown,asciidoc,c,python
+    autocmd FileType markdown,asciidoc,c,python,prolog
         \ setlocal textwidth=79 colorcolumn=+2
 augroup END
 
