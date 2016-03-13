@@ -18,6 +18,9 @@ Plug 'asciidoc/vim-asciidoc'
 " awesome increment/decrement of values (bool, int, numeric, hex)
 Plug 'vim-scripts/nextval'
 
+" section folding for markdown syntax
+Plug 'nelstrom/vim-markdown-folding'
+
 call plug#end()
 " }}}
 
