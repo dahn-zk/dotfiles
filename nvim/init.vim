@@ -16,13 +16,20 @@ Plug 'mmahnic/vim-flipwords'
 Plug 'asciidoc/vim-asciidoc'
 
 " awesome increment/decrement of values (bool, int, numeric, hex)
+" https://github.com/vim-scripts/nextval
 Plug 'vim-scripts/nextval'
 
 " section folding for markdown syntax
 Plug 'nelstrom/vim-markdown-folding'
 
+" syntax
+Plug 'vim-scripts/groovy.vim'
+
 call plug#end()
 " }}}
+
+"nmap <silent> <unique> <kPlus>  <Plug>nextvalInc
+"nmap <silent> <unique> <kMinus> <Plug>nextvalDec
 
 call camelcasemotion#CreateMotionMappings('<leader>')
 
