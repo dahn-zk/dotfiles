@@ -1,38 +1,20 @@
-" plugins {{{
-" vim-plug. https://github.com/junegunn/vim-plug
-
-" plugging {{{
-call plug#begin('~/.config/nvim/plugged/')
-
-" CamelCase motion through words
-" https://github.com/bkad/CamelCaseMotion
-Plug 'bkad/CamelCaseMotion'
-
-" change the order of 2 delimited pieces of text
-" https://github.com/mmahnic/vim-flipwords
-Plug 'mmahnic/vim-flipwords'
-
-" syntax for AsciiDoc
-Plug 'asciidoc/vim-asciidoc'
-
-" awesome increment/decrement of values (bool, int, numeric, hex)
-" https://github.com/vim-scripts/nextval
-Plug 'vim-scripts/nextval'
-
-" section folding for markdown syntax
-Plug 'nelstrom/vim-markdown-folding'
-
-" syntax
-Plug 'vim-scripts/groovy.vim'
-
-call plug#end()
+" init.vim - make it easier to make it easier to edit text {{{
+    nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+    nnoremap <leader>tv :tabnew $MYVIMRC<cr>
+    nnoremap <leader>sv :source $MYVIMRC<cr>
 " }}}
 
-"nmap <silent> <unique> <kPlus>  <Plug>nextvalInc
-"nmap <silent> <unique> <kMinus> <Plug>nextvalDec
-
-call camelcasemotion#CreateMotionMappings('<leader>')
-
+" plugins {{{
+    " https://github.com/junegunn/vim-plug
+    call plug#begin('~/.config/nvim/plugged/')
+		Plug 'bkad/CamelCaseMotion' " CamelCase motion through words https://github.com/bkad/CamelCaseMotion
+		Plug 'mmahnic/vim-flipwords' " change the order of 2 delimited pieces of text https://github.com/mmahnic/vim-flipwords
+		Plug 'asciidoc/vim-asciidoc' " syntax for AsciiDoc
+		Plug 'vim-scripts/nextval' " awesome increment/decrement of values (bool, int, numeric, hex) https://github.com/vim-scripts/nextval
+		Plug 'nelstrom/vim-markdown-folding' " section folding for markdown syntax
+		Plug 'vim-scripts/groovy.vim' " syntax
+    call plug#end()
+	call camelcasemotion#CreateMotionMappings('<leader>')
 " }}}
 
 " basic settings {{{
@@ -76,7 +58,7 @@ set number
 
 " undo/rescue files
 set undofile
-set dir=~/tmp
+set dir=~/.nvim-tmp
 
 " }}}
 
@@ -132,13 +114,6 @@ set stl+=%L        " Total lines
 
 " }}}
 
-" make it easier to make it easier to edit text {{{
-
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
-
-" }}}
-
 " display lines navigation by arrows {{{
 
 nnoremap <Down> gj
@@ -185,8 +160,9 @@ set hlsearch
 
 " highlighting
 nnoremap <leader><space> :noh<cr>
+nnoremap <esc> :noh<cr>
 
-" register
+" the register
 nnoremap <leader><space><space> :let @/=''<cr>
 
 " }}}
@@ -212,31 +188,27 @@ set wrap
 " }}}
 
 " move {{{
-"
-" move around things {{{
-
-" words
-nnoremap H b
-nnoremap L e
-
-" }}}
-
-" move things around {{{
-
-" lines
-nnoremap <A-j> :m .+1<CR>
-nnoremap <A-k> :m .-2<CR>
-vnoremap <A-j> :m '>+1<CR>gv
-vnoremap <A-k> :m '<-2<CR>gv
-
-" }}}
-
+    " move around things {{{
+        " words
+        nnoremap H b
+        nnoremap L e
+        " jump history
+        nnoremap <A-Left>  <C-o>
+        nnoremap <A-Right> <C-i>
+    " }}}
+    " move things around {{{
+        " lines
+        nnoremap <A-Down> :m .+1<CR>
+        nnoremap <A-Up>   :m .-2<CR>
+        vnoremap <A-Down> :m '>+1<CR>gv
+        vnoremap <A-Up>   :m '<-2<CR>gv
+    " }}}
 " }}}
 
 " signature abbreviations {{{
 
-iabbrev @Sig@ Dahn Oak <danylo.dubinin@gmail.com>
-iabbrev @sig@ Dahn Oak <danylo.dubinin@gmail.com>
+iabbrev @Sig@ Dan Oak <danylo.dubinin@gmail.com>
+iabbrev @sig@ Dan Oak <danylo.dubinin@gmail.com>
 iabbrev @Sigf@ Danylo Dubinin <danylo.dubinin@gmail.com>
 iabbrev @Sigu@ Данило Дубінін <danylo.dubinin@gmail.com>
 
@@ -359,8 +331,39 @@ set sessionoptions+=options
 
 " }}}
 
-" unsorted {{{
+" folding {{{
+set foldtext=MyFoldText()
+function! MyFoldText()
+    let line = getline(v:foldstart)
+    let sub = substitute(line, '/\*\|\*/\|{{'.'{\d\=', '', 'g')
+    return sub
+endfunction
+highlight Folded guibg=darkgrey guifg=white
+" }}}
+
+" logging vim messages {{{
+    if !empty(glob("~/log/nvim/messages.txt"))
+        set verbosefile=~/log/nvim/messages.txt
+        set verbose=12
+    else
+        set verbose=0
+    endif
+" }}}
 
 "nnoremap <leader>g :silent execute "grep -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
 
-" }}}
+function! s:MkNonExDir(file, buf)
+    if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
+        let dir=fnamemodify(a:file, ':h')
+        if !isdirectory(dir)
+            call mkdir(dir, 'p')
+        endif
+   endif
+endfunction
+augroup BWCCreateDir
+    autocmd!
+    autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
+augroup END
+
+nnoremap <Space> @q
+
