@@ -7,7 +7,7 @@
 . ~/dotfiles/bin/less.sh
 . ~/dotfiles/bin/t.sh
 
-f=~/.localrc; if [ -e $f ]; then ln -s ~/.localrc ~/dotfiles/localrc; fi
+f=~/.localrc; if [ -e $f ]; then . $f; fi
 
 # after ~/dotfiles/install.sh
 . ~/opt/z/z.sh
@@ -37,3 +37,5 @@ eval $(thefuck --alias)
 
 alias json-nvim="nvim +'set filetype=json' +'syntax on' +'set foldmethod=syntax'"
 alias tc='tee >(cat)'
+alias jq-access-token="jq .access_token --join-output"
+
