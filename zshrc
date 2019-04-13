@@ -38,4 +38,12 @@ eval $(thefuck --alias)
 alias json-nvim="nvim +'set filetype=json' +'syntax on' +'set foldmethod=syntax'"
 alias tc='tee >(cat)'
 alias jq-access-token="jq .access_token --join-output"
+d () { mkdir -p $1 && cd $1 }
+
+alias urldecode='python -c "import sys, urllib as ul; \
+  print ul.unquote_plus(sys.argv[1])"'
+alias urlencode='python -c "import sys, urllib as ul; \
+  print ul.quote_plus(sys.argv[1])"'
+
+explain () { open "https://explainshell.com/explain?cmd=$(urlencode $1)" }
 
