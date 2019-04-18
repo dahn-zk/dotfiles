@@ -1,6 +1,6 @@
 lower-case () {
     if (( # != 0 ))
-    then 
+    then
         echo $@ | awk '{print tolower($0)}'
     else
         awk '{print tolower($0)}'
