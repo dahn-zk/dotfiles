@@ -1,0 +1,9 @@
+. $ZDOTDIR/etc/*.sh
+. $ZDOTDIR/als/*.sh
+
+FPATH=$ZDOTDIR/bin:$FPATH
+autoload -Uz $fpath[1]/*(*:t)
+
+setopt inc_append_history
+setopt share_history
+# todo why zshenv settings do not work but these do

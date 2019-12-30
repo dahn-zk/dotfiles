@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+awk -v p=${1:-2} 'BEGIN { srand(); printf "%." p "f", rand() }'

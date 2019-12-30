@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+
+# tupr - convert to upper case
+
+tupr () {
+    if (( # != 0 ))
+    then
+        awk '{ print toupper($0) }' <<< "$@"
+    else
+        awk '{ print toupper($0) }' 
+    fi
+}
+(( # != 0 )) && tupr $@
+
+
