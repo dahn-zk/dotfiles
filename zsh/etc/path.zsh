@@ -1,3 +1,4 @@
 #!/usr/bin/env zsh
 
-export PATH="$HOME/bin/:/usr/local/opt/curl/bin:$PATH"
+path+=$HOME/bin/
+export PATH

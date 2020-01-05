@@ -1,10 +1,5 @@
 #!/usr/bin/env zsh
 
-autoload -U colors && colors
-
-PROMPT=$(printf '\u001b[38;5;0239m%-*s' ${COLUMNS:-$(tput cols)} $PWD'$' | tr ' $' '─ ')
-PROMPT+=$'\n'"%(?:%{$fg_bold[green]%}%\> :%{$fg_bold[red]%}%\> )%{$reset_color%}"
-
 HISTFILE=~/.zsh_history
 SAVEHIST=10000
 HISTSIZE=10000
@@ -21,3 +16,5 @@ HIST_SAVE_NO_DUPS=1      # Don't write duplicate entries in the history file.
 HIST_REDUCE_BLANKS=1     # Remove superfluous blanks before recording entry.
 HIST_VERIFY=1            # Don't execute immediately upon history expansion.
 HIST_BEEP=1              # Beep when accessing nonexistent history.
+
+SHORT_LOOPS=1 # http://zsh.sourceforge.net/Doc/Release/Shell-Grammar.html#Alternate-Forms-For-Complex-Commands
