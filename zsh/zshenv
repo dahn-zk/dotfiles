@@ -1,8 +1,11 @@
-PROMPT='> '
+autoload -U colors && colors
+
+PROMPT=$(printf '\u001b[38;5;0239m%-*s' ${COLUMNS:-$(tput cols)} $PWD'$' | tr ' $' '─ ')
+PROMPT+=$'\n'"%(?:%{$fg_bold[green]%}%\> :%{$fg_bold[red]%}%\> )%{$reset_color%}"
 
 HISTFILE=~/.zsh_history
-SAVEHIST=1000
-HISTSIZE=1000
+SAVEHIST=10000
+HISTSIZE=10000
 BANG_HIST=1              # Treat the '!' character specially during expansion.
 EXTENDED_HISTORY=1       # Write the history file in the ":start:elapsed;command" format.
 APPEND_HISTORY=1         # Write to the history file immediately, not when the shell exits.
