@@ -69,6 +69,7 @@ DISABLE_AUTO_UPDATE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    docker docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
