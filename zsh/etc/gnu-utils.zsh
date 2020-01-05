@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/gnu-tar/libexec/gnuman:$MANPATH"
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"

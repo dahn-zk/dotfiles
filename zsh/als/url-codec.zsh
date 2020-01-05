@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 alias urldec='\
 python -c "import sys, urllib as ul; \
 print ul.unquote_plus(sys.argv[1])"'

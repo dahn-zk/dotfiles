@@ -1,7 +1,9 @@
+#!/usr/bin/env zsh
+
 function () {
     local D=~/opt/z
     if [ -d $D ]
     then
-        . $D/z.sh
+        source $D/z.zsh
     fi
 }
