@@ -26,3 +26,9 @@ print "SDKMAN! - https://sdkman.io"
 curl -s "https://get.sdkman.io" | bash
 source $HOME/.sdkman/bin/sdkman-init.sh
 sdk version
+
+# http://www.figlet.org/
+brew install figlet
+
+# https://the.exa.website/
+brew install exa
