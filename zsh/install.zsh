@@ -32,3 +32,7 @@ brew install figlet
 
 # https://the.exa.website/
 brew install exa
+
+# The Silver Searcher
+# https://github.com/ggreer/the_silver_searcher
+brew install the_silver_searcher
