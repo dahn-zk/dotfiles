@@ -37,5 +37,16 @@ brew install exa
 # https://github.com/ggreer/the_silver_searcher
 brew install the_silver_searcher
 
+# csvkit
 # https://csvkit.readthedocs.io
-brew install csvkit
+pipenv install csvkit
+
+# PostgreSQL
+brew install postgresql
+brew services start postgresql
+initdb /usr/local/var/postgres
+pg_ctl -D /usr/local/var/postgres status
+
+# csvkit -> postgresql
+pipenv install psycopg2-binary
+
