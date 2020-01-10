@@ -41,3 +41,6 @@ pg_ctl -D /usr/local/var/postgres status
 
 # csvkit -> postgresql
 pipenv install psycopg2-binary
+
+# draw.io
+brew cask install drawio
