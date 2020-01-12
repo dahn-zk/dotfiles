@@ -44,3 +44,6 @@ pipenv install psycopg2-binary
 
 # draw.io
 brew cask install drawio
+
+# IDEA
+# xcode-select --install
