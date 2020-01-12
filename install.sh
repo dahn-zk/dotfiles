@@ -47,3 +47,7 @@ brew cask install drawio
 
 # IDEA
 # xcode-select --install
+
+# Karabiner-Elements
+# https://pqrs.org/osx/karabiner/
+ln $HOME/dotfiles/karabiner/karabiner.json $HOME/.config/karabiner/karabiner.json
