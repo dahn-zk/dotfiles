@@ -51,3 +51,6 @@ brew cask install drawio
 # Karabiner-Elements
 # https://pqrs.org/osx/karabiner/
 ln $HOME/dotfiles/karabiner/karabiner.json $HOME/.config/karabiner/karabiner.json
+
+# pngpaste
+brew install pngpaste
