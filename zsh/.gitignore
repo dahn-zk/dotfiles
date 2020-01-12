@@ -1,1 +1,3 @@
+# FIXME: these files should not appear here, but despite of the config they do
 .zcompdump-*
+.zsh_history
