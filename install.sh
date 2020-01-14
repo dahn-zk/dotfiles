@@ -29,6 +29,8 @@ brew install exa
 # https://github.com/ggreer/the_silver_searcher
 brew install the_silver_searcher
 
+# pipenv
+
 # csvkit
 # https://csvkit.readthedocs.io
 pipenv install csvkit
