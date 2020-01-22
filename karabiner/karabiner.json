@@ -48,6 +48,67 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "description": "Left_Shift+Left_Command language toggle (en->ru->de->en...)",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "input_sources": [
+                      {
+                        "input_source_id": "com.apple.keylayout.Ukrainian-PC"
+                      }
+                    ],
+                    "type": "input_source_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "left_shift",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_gui"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "select_input_source": {
+                      "input_source_id": "com.apple.keylayout.Colemak"
+                    }
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "input_sources": [
+                      {
+                        "input_source_id": "com.apple.keylayout.Colemak"
+                      }
+                    ],
+                    "type": "input_source_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "left_shift",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_gui"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "select_input_source": {
+                      "input_source_id": "com.apple.keylayout.Ukrainian-PC"
+                    }
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
           }
         ]
       },
