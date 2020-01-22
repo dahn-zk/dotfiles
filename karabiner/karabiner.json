@@ -73,6 +73,15 @@
                 },
                 "to": [
                   {
+                    "key_code": "left_shift",
+                    "modifiers": [
+                      "left_gui"
+                    ],
+                    "lazy": true
+                  }
+                ],
+                "to_if_alone": [
+                  {
                     "select_input_source": {
                       "input_source_id": "com.apple.keylayout.Colemak"
                     }
@@ -100,6 +109,15 @@
                   }
                 },
                 "to": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": [
+                      "left_gui"
+                    ],
+                    "lazy": true
+                  }
+                ],
+                "to_if_alone": [
                   {
                     "select_input_source": {
                       "input_source_id": "com.apple.keylayout.Ukrainian-PC"
