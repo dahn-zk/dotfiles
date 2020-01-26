@@ -56,3 +56,6 @@ ln $HOME/dotfiles/karabiner/karabiner.json $HOME/.config/karabiner/karabiner.jso
 
 # pngpaste
 brew install pngpaste
+
+brew install ghostscript imagemagic
+# pdf to png
