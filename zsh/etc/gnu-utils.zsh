@@ -17,8 +17,8 @@ path=(/usr/local/opt/findutils/libexec/gnubin $path)
 manpath+=/usr/local/opt/findutils/libexec/gnuman
 
 # coreutils
-#path=(/usr/local/opt/coreutils/libexec/gnubin $path)
-#manpath+=/usr/local/opt/coreutils/libexec/gnuman
+path=(/usr/local/opt/coreutils/libexec/gnubin $path)
+manpath+=/usr/local/opt/coreutils/libexec/gnuman
 
 # sed
 path=(/usr/local/opt/gnu-sed/libexec/gnubin $path)
