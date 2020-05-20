@@ -2,7 +2,7 @@
     nnoremap <leader>ev :vsplit $MYVIMRC<cr>
     nnoremap <leader>tv :tabnew $MYVIMRC<cr>
     nnoremap <leader>sv :source $MYVIMRC<cr>
-" }}}
+"}}}
 
 " plugins {{{
     " https://github.com/junegunn/vim-plug
@@ -10,16 +10,24 @@
     call plug#begin('~/.config/nvim/plugged/')
         " CamelCase motion through words https://github.com/bkad/CamelCaseMotion
 		Plug 'bkad/CamelCaseMotion'
-        " change the order of 2 delimited pieces of text https://github.com/mmahnic/vim-flipwords
+
+        " change the order of 2 delimited pieces of text
+        " https://github.com/mmahnic/vim-flipwords
 		Plug 'mmahnic/vim-flipwords'
+
         " syntax for AsciiDoc
 		Plug 'asciidoc/vim-asciidoc', { 'for': 'asciidoc' }
-        " awesome increment/decrement of values (bool, int, numeric, hex) https://github.com/vim-scripts/nextval
+
+        " awesome increment/decrement of values (bool, int, numeric, hex)
+        " https://github.com/vim-scripts/nextval
 		Plug 'vim-scripts/nextval'
+
         " section folding for markdown syntax
 		Plug 'nelstrom/vim-markdown-folding', { 'for': 'markdown' }
+
         " syntax
 		Plug 'vim-scripts/groovy.vim', { 'for': 'groovy' }
+
         " tree explorer
         Plug 'scrooloose/nerdtree'
     call plug#end()
