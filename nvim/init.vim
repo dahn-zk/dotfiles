@@ -47,7 +47,6 @@ call camelcasemotion#CreateMotionMappings('<leader>')
 set modelines=0
 
 syntax on
-colorscheme 256_noir
 
 " tab settings
 set tabstop=4
