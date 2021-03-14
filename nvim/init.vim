@@ -1,37 +1,45 @@
 " init.vim - make it easier to make it easier to edit text {{{
-    nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-    nnoremap <leader>tv :tabnew $MYVIMRC<cr>
-    nnoremap <leader>sv :source $MYVIMRC<cr>
+" edit and apply init.vim quickly from whenever you are
+
+" [e]dit [v]imrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+" [t]ab-edit [v]imrc
+nnoremap <leader>tv :tabnew $MYVIMRC<cr>
+" [s]ource [v]imrc
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
 "}}}
 
 " plugins {{{
-    " https://github.com/junegunn/vim-plug
-    " cheatsheet: PlugStatus PlugUpdate
-    call plug#begin('~/.config/nvim/plugged/')
-        " CamelCase motion through words https://github.com/bkad/CamelCaseMotion
-		Plug 'bkad/CamelCaseMotion'
+" list of plugins to install
+" https://github.com/junegunn/vim-plug
+" cheatsheet: PlugStatus PlugUpdate
+call plug#begin('~/.config/nvim/plugged/')
+    " CamelCase motion through words 
+    " https://github.com/bkad/CamelCaseMotion
+    Plug 'bkad/CamelCaseMotion'
 
-        " change the order of 2 delimited pieces of text
-        " https://github.com/mmahnic/vim-flipwords
-		Plug 'mmahnic/vim-flipwords'
+    " word-flipping: change the order of 2 delimited pieces of text
+    " https://github.com/mmahnic/vim-flipwords
+    Plug 'mmahnic/vim-flipwords'
 
-        " syntax for AsciiDoc
-		Plug 'asciidoc/vim-asciidoc', { 'for': 'asciidoc' }
+    " AsciiDoc syntax
+    Plug 'asciidoc/vim-asciidoc', { 'for': 'asciidoc' }
 
-        " awesome increment/decrement of values (bool, int, numeric, hex)
-        " https://github.com/vim-scripts/nextval
-		Plug 'vim-scripts/nextval'
+    " increment/decrement of values (bool, int, numeric, hex)
+    " https://github.com/vim-scripts/nextval
+    Plug 'vim-scripts/nextval'
 
-        " section folding for markdown syntax
-		Plug 'nelstrom/vim-markdown-folding', { 'for': 'markdown' }
+    " section folding for markdown syntax
+    Plug 'nelstrom/vim-markdown-folding', { 'for': 'markdown' }
 
-        " syntax
-		Plug 'vim-scripts/groovy.vim', { 'for': 'groovy' }
+    " Groovy syntax
+    Plug 'vim-scripts/groovy.vim', { 'for': 'groovy' }
 
-        " tree explorer
-        Plug 'scrooloose/nerdtree'
-    call plug#end()
-	call camelcasemotion#CreateMotionMappings('<leader>')
+    " filesystem tree explorer
+    Plug 'scrooloose/nerdtree'
+call plug#end()
+call camelcasemotion#CreateMotionMappings('<leader>')
 " }}}
 
 " basic settings {{{
