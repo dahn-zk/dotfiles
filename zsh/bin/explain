@@ -1,3 +1,17 @@
 #!/usr/bin/env zsh
 
-open "https://explainshell.com/explain?cmd=$(urlenc $1)"
+function ()
+{
+  local function usage ()
+  {
+    echo "explain <shell comamnd>"
+    echo "Query and open explainshell.com in browser"
+  }
+
+  if (( $# == 0 ))
+  then
+    >&2 usage
+  else 
+    open "https://explainshell.com/explain?cmd=$(urlenc $@)"
+  fi
+}

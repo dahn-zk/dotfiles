@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+function ()
+{
+  local function usage ()
+  {
+    echo "rd <directory>"
+    echo "Delete directory"
+  }
+
+  if (( $# == 0 ))
+  then
+    >&2 usage
+  else 
+    rmdir $@
+  fi
+}

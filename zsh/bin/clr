@@ -1,3 +1,15 @@
 #!/usr/bin/env zsh
+# tags: filesystem
 
-rm $1 && touch $1
+function usage
+{
+  echo "clr <file>"
+  echo "Delete file and create an empty one instead"
+}
+
+if (( $# != 1 ))
+then
+  >&2 usage
+else
+  rm $1 && touch $1
+fi

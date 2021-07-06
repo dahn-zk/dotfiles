@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+# tags: filesystem
+
+function usage
+{
+  echo "copy <rsync params>"
+  echo "rsync with default params"
+}
+
+if (( $# == 0 ))
+then
+  >&2 usage
+else
+  rsync --recursive --human-readable --progress --checksum $@
+fi

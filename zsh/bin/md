@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+function ()
+{
+  local function usage ()
+  {
+    echo "md <directory>"
+    echo "Create directory"
+  }
+
+  if (( $# == 0 ))
+  then
+    >&2 usage
+  else 
+    mkdir -p $@
+  fi
+}

@@ -1,4 +1,16 @@
 #!/usr/bin/env zsh
+# tags: navigation, filesystem
 
-exa $1
-cd $1
+function usage
+{
+  echo "cl <dir>"
+  echo "List directory contents and change directory"
+}
+
+if (( $# != 1 ))
+then
+  >&2 usage
+else
+  exa $1
+  cd $1
+fi
