@@ -13,7 +13,23 @@
         "tmux",
         "nvim"
     ],
-    "workbench.colorTheme": "Deepdark Material Theme | Default Version",
-    "window.menuBarVisibility": "toggle",
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.colorTheme": "Default Dark+",
+    "window.menuBarVisibility": "default",
+    "workbench.iconTheme": "vscode-icons",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "window.zoomLevel": 0,
+    "C_Cpp.loggingLevel": "Debug",
+    "git.autoRepositoryDetection": false,
+    "editor.minimap.maxColumn": 100,
+    "editor.wordWrap": "on",
+    "cmake.configureOnEdit": false,
+    "extensions.ignoreRecommendations": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "cmake.configureOnOpen": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "terminal.integrated.inheritEnv": false,
+    "diffEditor.ignoreTrimWhitespace": false
 }
