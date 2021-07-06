@@ -1,12 +1,12 @@
-CONFIG_DIR=~/.config/nvim
+# create symlink for init.vim in the default config dir
+NVIM_CONFIG_HOME=$XDG_CONFIG_HOME/nvim
+mkdir -p $NVIM_CONFIG_HOME
+ln -s $PWD/init.vim $NVIM_CONFIG_HOME
 
-mkdir -p $CONFIG_DIR
+# download plugin manager
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim \
+  --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-ln -s ./init.vim $CONFIG_DIR
-
-# https://wiki.archlinux.org/index.php/Neovim
-
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
+# install download plugin manager
 # :PlugInstall
 
