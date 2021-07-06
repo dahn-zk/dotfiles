@@ -31,5 +31,6 @@
         "*.ipynb": "jupyter.notebook.ipynb"
     },
     "terminal.integrated.inheritEnv": false,
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.confirmSync": false
 }
