@@ -17,3 +17,7 @@ rm -f ~/.zcompdump-* .zcompdump-*
 # https://github.com/zsh-users/zsh-syntax-highlighting
 brew install zsh-syntax-highlighting
 
+# fd is a simple, fast and user-friendly alternative to find.
+# https://github.com/sharkdp/fd
+alias fd=fdfind
+
