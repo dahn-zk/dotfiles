@@ -44,8 +44,11 @@ call camelcasemotion#CreateMotionMappings('<leader>')
 
 " basic settings {{{
 
+" modelines - lines of special commented code to set options for one or more files
+" disable modelines
 set modelines=0
 
+" syntax highlighting
 syntax on
 
 " tab settings
