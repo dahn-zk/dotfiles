@@ -1,4 +1,7 @@
 #!/usr/bin/env zsh
 
-alias firefox="open -a Firefox"
-
+case "$OSTYPE" in
+  solaris*) echo "SOLARIS" ;;
+  darwin*)  alias firefox="open -a Firefox" ;; 
+  linux*)   ;;
+esac
