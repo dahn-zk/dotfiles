@@ -28,9 +28,13 @@
     "vsicons.dontShowNewVersionMessage": true,
     "cmake.configureOnOpen": true,
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "terminal.integrated.inheritEnv": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }
 }
