@@ -36,5 +36,6 @@
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
-    }
+    },
+    "git.suggestSmartCommit": false
 }
