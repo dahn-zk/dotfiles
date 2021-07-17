@@ -1,0 +1,10 @@
+3.8 is not supported as for 12.0.
+
+Ubuntu:
+```
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt-get install python3.7
+```
+
+`FindExternalEvaluators[]` should be able to find 3.7.
