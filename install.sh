@@ -59,3 +59,5 @@ brew install pngpaste
 
 brew install ghostscript imagemagic
 # pdf to png
+
+ln -s dotfiles/jupyter .jupyter
