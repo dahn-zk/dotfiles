@@ -18,7 +18,6 @@
     "workbench.iconTheme": "vscode-icons",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "window.zoomLevel": 0,
     "C_Cpp.loggingLevel": "Debug",
     "git.autoRepositoryDetection": false,
     "editor.minimap.maxColumn": 100,
@@ -37,5 +36,20 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "git.suggestSmartCommit": false
+    "git.suggestSmartCommit": false,
+    "alignment.surroundSpace": {
+        "colon": [
+            1,
+            1
+        ],
+        "assignment": [
+            1,
+            1
+        ],
+        "arrow": [
+            1,
+            1
+        ],
+        "comment": 2
+    }
 }
