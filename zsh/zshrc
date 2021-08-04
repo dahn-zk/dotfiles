@@ -1,3 +1,9 @@
 #!/usr/bin/env zsh
 
+# enable profiling https://stevenvanbael.com/profiling-zsh-startup
+# to check: run `zprof`
+# to run a timing test once: `time zsh -i -c exit`
+
+zmodload zsh/zprof
+
 for s in $ZDOTDIR/etc/**; do source $s; done
