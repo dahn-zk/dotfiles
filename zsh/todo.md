@@ -1,0 +1,2 @@
+- set window title. some terminals e.g. Konsole do not have an ability to display a running command with it's parameters automatically
+- figure out how not to scroll to the end of the screen on output. it seems that in most cases i don't want it, rather i want to read the output from the beginning
