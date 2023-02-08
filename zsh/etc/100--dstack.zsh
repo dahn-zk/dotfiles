@@ -1,4 +1,4 @@
 #!/usr/bin/env zsh
 
-bindkey -s "^[[1;2D" "pushd ..\n" # shift ←
-bindkey -s "^[[1;2C" "popd\n"     # shift →
+bindkey -s "^[[1;3A" "pushd ..\n" # alt up
+bindkey -s "^[[1;3B" "popd\n"     # alt dn
